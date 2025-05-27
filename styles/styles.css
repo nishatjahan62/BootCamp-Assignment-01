@@ -13,6 +13,9 @@
 body {
   background-color: #d6e6f9;
 }
+section {
+  margin-top: 100px;
+}
 nav {
   background-color: white;
 }
@@ -28,13 +31,11 @@ nav {
 }
 
 .banner-section,
-.my-coding {
+.why-dev-box {
   background-color: #e6edf9;
   margin-right: 50px;
   margin-left: 50px;
-  margin-top: 50px;
-  border: 1px solid #fcb735;
-  box-shadow: 0 8px 6px #fcb73550;
+  box-shadow: 0 8px 8px #fcb73550;
   text-align: center;
   padding-bottom: 24px;
   padding-top: 24px;
@@ -47,8 +48,10 @@ nav {
   font-size: 40px;
   padding-bottom: 0;
 }
-.section-title{
-    
+.section-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
 }
 .section-description {
   font-weight: 400;
@@ -58,22 +61,63 @@ nav {
   padding-bottom: 15px;
   text-align: center;
 }
+.why-dev-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.my-coding {
+  text-align: left;
+}
+.why-dev-text {
+   text-align: left;
+   width: 700px;
+   
+}
+.working-developer-img {
+}
+#section-2-heading{
+    font-weight: 25px;
+}
 
 /* Responsive for phone */
 @media only screen and (max-width: 576px) {
+    section {
+  margin-top: 50px;
+}
   .nav,
   .banner-section {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .banner-section {
+  .banner-section,
+  .why-dev-box {
     margin-right: 24px;
     margin-left: 24px;
   }
-  #banner-heading{
+  #banner-heading {
     font-size: 25px;
   }
   .section-description {
-  margin: auto;
+    margin: auto;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .working-developer-img {
+    width: 60%;
+    margin: auto;
+  }
+  .why-dev-box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .my-coding {
+  text-align: center;
+}
+.why-dev-text{
+    text-align: center;
 }
 }
