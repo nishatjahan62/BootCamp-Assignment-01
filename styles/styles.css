@@ -16,10 +16,11 @@ body {
 section {
   margin-top: 100px;
 }
-nav {
+nav, footer {
   background-color: white;
 }
-.nav {
+.nav, .footer
+{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +32,8 @@ nav {
 }
 
 .banner-section,
-.why-dev-box {
+.why-dev-box,
+#youtube-content {
   background-color: #e6edf9;
   margin-right: 50px;
   margin-left: 50px;
@@ -72,21 +74,53 @@ nav {
   text-align: left;
 }
 .why-dev-text {
-   text-align: left;
-   width: 700px;
-   
+  text-align: left;
+  width: 550px;
 }
 .working-developer-img {
 }
-#section-2-heading{
-    font-weight: 25px;
+#section-2-heading {
+  font-weight: 25px;
 }
+#youtube-content {
+  border: 1px solid #d6e6f9;
+  width: 750px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+}
+.targets {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+.target-box {
+  border: 1px solid #b8e7fa;
+  background: linear-gradient(to top, #b8e7fa, white);
+  text-align: left;
+  padding-left: 10px;
+  width: 220px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 12px;
+}
+.learn-more {
+  font-weight: bold;
+}
+.footer-link{
+    display: flex;
+    gap: 10px;
+}
+    
 
 /* Responsive for phone */
 @media only screen and (max-width: 576px) {
-    section {
-  margin-top: 50px;
-}
+  section {
+    margin-top: 50px;
+  }
   .nav,
   .banner-section {
     padding-right: 10px;
@@ -115,9 +149,38 @@ nav {
     flex-direction: column-reverse;
   }
   .my-coding {
-  text-align: center;
-}
-.why-dev-text{
     text-align: center;
-}
+  }
+  .why-dev-text {
+    text-align: center;
+  }
+  #youtube-content {
+    border: 1px solid #d6e6f9;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .youtube {
+    width: 400px;
+    height: 310px;
+  }
+  .targets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  .target-box{
+    margin: auto;
+  }
+  .footer,.footer-link{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
 }
