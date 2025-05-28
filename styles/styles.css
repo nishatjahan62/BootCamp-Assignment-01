@@ -110,6 +110,10 @@ nav, footer {
 .learn-more {
   font-weight: bold;
 }
+.footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .footer-link{
     display: flex;
     gap: 10px;
